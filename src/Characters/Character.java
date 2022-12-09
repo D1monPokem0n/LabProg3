@@ -9,7 +9,6 @@ public abstract class Character {
     Character(String name){
         this.name = name;
     }
-
     @Override
     public int hashCode() {
         return Objects.hash(name);
@@ -27,5 +26,6 @@ public abstract class Character {
         Character other = (Character) otherObject;
         return name.equals(other.getName());
     }
+    public abstract void getInfo();
 
 }

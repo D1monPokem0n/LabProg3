@@ -48,12 +48,13 @@ public class Christer extends Person implements Throwing{
 
     @Override
     public int hashCode() {
-        return super.hashCode();
+        return super.hashCode() * 3;
     }
 
+
     @Override
-    public String toString() {
-        return super.toString();
+    public void getInfo(){
+        System.out.println("Кристер мог метнуть в кого-то камень");
     }
 
 }

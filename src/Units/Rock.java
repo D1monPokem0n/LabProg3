@@ -18,5 +18,9 @@ public class Rock extends Unit implements Ejectable{
     public String toString() {
         return super.toString();
     }
+    @Override
+    public void getInfo(){
+        System.out.println("Каменный камень");
+    }
 
 }

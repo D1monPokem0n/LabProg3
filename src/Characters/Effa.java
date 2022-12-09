@@ -17,5 +17,9 @@ public class Effa extends Pet{
     public String toString() {
         return super.toString();
     }
+    @Override
+    public void getInfo(){
+        System.out.println("Еффа был милым щенком");
+    }
 
 }

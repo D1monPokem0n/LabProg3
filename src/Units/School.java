@@ -31,4 +31,8 @@ public class School extends Unit{
     public String toString() {
         return super.toString();
     }
+    @Override
+    public void getInfo(){
+        System.out.println("Школа, в которой учились ребята");
+    }
 }

@@ -29,4 +29,5 @@ public abstract class Unit {
         Unit other = (Unit) otherObject;
         return name.equals(other.getName());
     }
+    public abstract void getInfo();
 }

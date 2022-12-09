@@ -17,4 +17,8 @@ public class Shelf extends Unit implements Lieable{
     public String toString() {
         return super.toString();
     }
+    @Override
+    public void getInfo(){
+        System.out.println("Полка удобная...");
+    }
 }

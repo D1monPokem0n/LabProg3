@@ -26,6 +26,9 @@ public class Gunilla extends Person implements Exasparating{
     public String toString() {
         return super.toString();
     }
-
+    @Override
+    public void getInfo(){
+        System.out.println("Гунилла умеет раздражать, а ещё громко смеяться");
+    }
 
 }

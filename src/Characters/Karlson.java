@@ -36,4 +36,8 @@ public class Karlson extends Person implements Lying{
         Karlson other = (Karlson) otherObject;
         return getName().equals(other.getName());
     }
+    @Override
+    public void getInfo(){
+        System.out.println("Карлсон спит...");
+    }
 }

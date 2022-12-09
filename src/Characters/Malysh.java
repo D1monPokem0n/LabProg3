@@ -51,4 +51,8 @@ public class Malysh extends Person implements Irritable{
     public String toString() {
         return super.toString();
     }
+    @Override
+    public void getInfo(){
+        System.out.println("Малыш очень любит собак");
+    }
 }
