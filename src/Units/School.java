@@ -21,4 +21,14 @@ public class School extends Unit{
         String message = time + ", " + who + " возвращались со " + getName() + ".";
         System.out.println(message);
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

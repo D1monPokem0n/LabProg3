@@ -8,4 +8,13 @@ public class Shelf extends Unit implements Lieable{
     public String lieOnIt(){
         return "лежал на " + getName();
     }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }

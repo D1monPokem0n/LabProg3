@@ -17,4 +17,15 @@ public class Gunilla extends Person implements Exasparating{
             System.out.println(getName()+" смогла вывести "+person.getName()+" из себя.");
         }
     }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+
 }

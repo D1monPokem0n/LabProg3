@@ -45,4 +45,15 @@ public class Christer extends Person implements Throwing{
     public void allow(Person person){
         System.out.println(getName() + " позволял " + person.getName() + " делать то, что он делает сколько он хочет.");
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

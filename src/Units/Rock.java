@@ -8,4 +8,15 @@ public class Rock extends Unit implements Ejectable{
     public Rock(String name){
         super(name);
     }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
 }

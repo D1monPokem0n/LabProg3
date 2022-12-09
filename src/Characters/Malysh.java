@@ -42,4 +42,13 @@ public class Malysh extends Person implements Irritable{
     public void pat(Pet pet){
         System.out.println(getName()+" обнимает и гладит "+pet.getName() + ".");
     }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
