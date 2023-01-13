@@ -1,6 +1,6 @@
-package Characters;
+package characters;
 
-import Units.Lieable;
+import units.Lieable;
 
 public interface Lying {
     void lieOn(Lieable smth);

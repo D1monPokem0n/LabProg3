@@ -1,17 +1,18 @@
-package Units;
-
-import Characters.Character;
+package characters;
 
 import java.util.Objects;
 
-public abstract class Unit {
+public abstract class Character {
     private String name;
-    public String getName(){
+
+    public String getName() {
         return name;
     }
-    public Unit(String name){
+
+    Character(String name) {
         this.name = name;
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(name);
@@ -19,15 +20,18 @@ public abstract class Unit {
 
     @Override
     public String toString() {
-        return getClass().getName()+"[name="+name+"]";
+        return getClass().getName() + "[name=" + name + "]";
     }
+
     @Override
     public boolean equals(Object otherObject) {
         if (this == otherObject) return true;
         if (otherObject == null) return false;
         if (getClass() != otherObject.getClass()) return false;
-        Unit other = (Unit) otherObject;
+        Character other = (Character) otherObject;
         return name.equals(other.getName());
     }
+
     public abstract void getInfo();
+
 }

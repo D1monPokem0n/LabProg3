@@ -1,21 +1,26 @@
-package Characters;
-import Units.*;
+package units;
 
 import java.util.Objects;
 
-public abstract class Character {
+public abstract class Unit {
     private String name;
-    public String getName(){return name;}
-    Character(String name){
+
+    public String getName() {
+        return name;
+    }
+
+    public Unit(String name) {
         this.name = name;
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(name);
     }
+
     @Override
     public String toString() {
-        return getClass().getName() + "[name="+name+"]";
+        return getClass().getName() + "[name=" + name + "]";
     }
 
     @Override
@@ -23,9 +28,9 @@ public abstract class Character {
         if (this == otherObject) return true;
         if (otherObject == null) return false;
         if (getClass() != otherObject.getClass()) return false;
-        Character other = (Character) otherObject;
+        Unit other = (Unit) otherObject;
         return name.equals(other.getName());
     }
-    public abstract void getInfo();
 
+    public abstract void getInfo();
 }
